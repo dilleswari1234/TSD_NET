@@ -40,16 +40,12 @@ We construct two **task-specific datasets** by combining URBAN-SED (as mixtures)
   - Enables evaluation under **positive query conditions**, where the reference class is present in the mixture.
 
 - **Urban TSD Strong+**  
-
-To better evaluate the model in realistic conditions, we construct the **Urban TSD Strong+** dataset by introducing **negative samples**:
-
-- **Negative samples** are mixture–reference pairs where the **target sound does not occur** in the mixture.  
-- For generation, we randomly select a **reference audio** from UrbanSound8K whose events are **absent** in the chosen URBAN-SED mixture.  
-- Since the target class is not present, the **timestamp labels are all set to 0**.  
+  To better evaluate the model in realistic conditions, we construct the **Urban TSD Strong+** dataset by introducing **negative samples**:
+  - **Negative samples** are mixture–reference pairs where the **target sound does not occur** in the mixture.  
+  - For generation, we randomly select a **reference audio** from UrbanSound8K whose events are **absent** in the chosen URBAN-SED mixture.  
+  - Since the target class is not present, the **timestamp labels are all set to 0**.  
 
 This setup simulates real-world scenarios where a target sound may be missing, enabling robust training and evaluation of TSD models under both **positive and negative query conditions**.
-
-These dataset variants provide a benchmark for assessing TSD models in diverse conditions.
 
 You can download the datasets here:  
 - [URBAN-SED](https://zenodo.org/records/1324404)  
