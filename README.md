@@ -1,8 +1,5 @@
 # 🎧 A Unified Audio Encoder Framework for Target Sound Detection (TSD) with Strong and Strong+ Datasets
 
-This repository provides the implementation of **a unified audio encoder framework for Target Sound Detection (TSD)**.  
-The models are trained and evaluated on the **Urban TSD Strong** and **Urban TSD Strong+** datasets:  
-
 ## 📌 Overview
 
 **Target Sound Detection (TSD)** is the task of determining whether a target sound occurs within an audio mixture.  
@@ -11,7 +8,7 @@ This repository provides an implementation of TSD using the **Strong+ dataset**,
 Our approach leverages a hybrid architecture where **frame-level** and **clip-level** embeddings are extracted and fused through **bi-directional GRU (Bi-GRU)** layers, followed by classification layers for sound event detection.
 
 ### 🔑 Key Features
-- ✅ Support for **Strong+ dataset** with strong temporal annotations and negative samples  
+- ✅ Support for **Strong and Strong+ dataset** with strong temporal annotations and negative samples  
 - 🎵 Extraction of both **frame-level** and **clip-level** embeddings  
 - 🧩 Flexible backbone: **CNN14** and **ConvNeXt** feature extractors  
 - 📊 Evaluation with multiple metrics: **F1-score**, **Accuracy**, and **Error Rate**  
