@@ -52,3 +52,18 @@ You can download the datasets here:
 - [UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html)  
 
 ---
+
+## ⚙️ Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/TSD-Net.git
+cd TSD-Net
+
+# Create environment (Python 3.9+ recommended)
+conda create -n tsdnet python=3.9
+conda activate tsdnet
+
+# Install dependencies
+pip install -r requirements.txt
