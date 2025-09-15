@@ -21,14 +21,35 @@ Our **(MODEL)** architecture leverages **frame-level** and **clip-level** repres
 ## 📂 Dataset
 
 We use the **Strong+ dataset** from [DCASE Challenge](https://dcase.community/challenge2023/task-sound-event-detection-in-domestic-environments).  
-It includes:
-- **Weak labels** (clip-level)  
-- **Strong+ labels** (strong temporal annotations with extra synthetic data)  
 
-Dataset split:
-- **Train**: Synthetic + real recordings with strong labels  
-- **Validation**: Subset of strongly labeled clips  
-- **Test**: Real-life audio recordings  
+## 📂 Datasets
+
+We conduct experiments on **URBAN-SED** and **UrbanSound8K**, along with task-specific variants designed for **Target Sound Detection (TSD):**
+
+- **URBAN-SED**  
+  A synthetic dataset of **10,000 ten-second soundscapes** containing 1–9 events from 10 urban sound classes.  
+  - Split: 6,000 training, 2,000 validation, 2,000 test examples  
+  - Provides **precise frame-level annotations** for supervised sound event detection.
+
+- **UrbanSound8K**  
+  A dataset of **8,732 short, isolated clips** from the same 10 urban classes.  
+  - Used as **reference audio** for model conditioning in TSD tasks.
+
+---
+
+### 🔹 Urban TSD Variants
+
+We construct two **task-specific datasets** by combining URBAN-SED (as mixtures) and UrbanSound8K (as reference audio):
+
+- **Urban TSD Strong**  
+  - Retains **strong labels with timestamps** from URBAN-SED.  
+  - Enables evaluation under **positive query conditions**, where the reference class is present in the mixture.
+
+- **Urban TSD Strong+**  
+  - Extends the **Strong** setup by adding **negative samples**, where the reference class is absent.  
+  - Allows evaluation under both **positive and negative queries**, making the task more realistic and challenging.
+
+These dataset variants provide a benchmark for assessing TSD models in diverse conditions.
 
 You can download the dataset [here](https://zenodo.org/record/4660670).
 
