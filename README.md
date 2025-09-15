@@ -1,6 +1,6 @@
-# 🎧 TSD-Net: Target Sound Detection with Strong+ Dataset
+# 🎧 Target Sound Detection with Strong+ Dataset
 
-This repository contains the implementation of **TSD-Net**, a deep learning model for **Target Sound Detection (TSD)**.  
+This repository contains the implementation of **Target Sound Detection**.
 The model is trained and evaluated on the **Strong+ dataset**, which provides temporally strong labels suitable for supervised sound event detection tasks.
 
 ---
@@ -8,7 +8,7 @@ The model is trained and evaluated on the **Strong+ dataset**, which provides te
 ## 📌 Overview
 
 Target Sound Detection aims to identify whether a target sound occurs in an audio mixture.  
-Our **TSD-Net** architecture leverages **frame-level** and **clip-level** representations, fused through recurrent layers (GRU/LSTM), followed by classification layers for event detection.
+Our **(MODEL)** architecture leverages **frame-level** and **clip-level** representations, fused through recurrent layers (BI-GRU), followed by classification layers for event detection.
 
 **Key features:**
 - Support for **Strong+ dataset** (with strong temporal annotations).  
