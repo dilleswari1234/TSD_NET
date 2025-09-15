@@ -1,22 +1,23 @@
-# 🎧 Target Sound Detection with Strong+ Dataset
+# 🎧 A Unified Audio Encoder Framework for Target Sound Detection (TSD) with Strong and Strong+ Datasets
 
-This repository contains the implementation of **Target Sound Detection**.
-The model is trained and evaluated on the **Strong+ dataset**, which provides temporally strong labels suitable for supervised sound event detection tasks.
-
+This repository provides the implementation of **a unified audio encoder framework for Target Sound Detection (TSD)**.  
+The models are trained and evaluated on the **Urban TSD Strong** and **Urban TSD Strong+** datasets:  
+- **Strong** provides temporally strong labels with precise timestamps.  
+- **Strong+** extends Strong by adding negative samples (where the target sound is absent), enabling more realistic evaluation.  
 ---
-
 ## 📌 Overview
 
-Target Sound Detection aims to identify whether a target sound occurs in an audio mixture.  
-Our **(MODEL)** architecture leverages **frame-level** and **clip-level** representations, fused through recurrent layers (BI-GRU), followed by classification layers for event detection.
+**Target Sound Detection (TSD)** is the task of determining whether a target sound occurs within an audio mixture.  
+This repository provides an implementation of TSD using the **Strong+ dataset**, which includes temporally strong labels and additional negative samples for realistic evaluation.
 
-**Key features:**
-- Support for **Strong+ dataset** (with strong temporal annotations).  
-- Extracts both **frame-level** and **clip-level** embeddings.  
-- Flexible architecture supporting CNN14 and ConvNeXt feature extractors.  
-- Evaluation metrics: **F1-score**, **Accuracy**, and **Error Rate**.
+Our approach leverages a hybrid architecture where **frame-level** and **clip-level** embeddings are extracted and fused through **bi-directional GRU (Bi-GRU)** layers, followed by classification layers for sound event detection.
 
----
+### 🔑 Key Features
+- ✅ Support for **Strong+ dataset** with strong temporal annotations and negative samples  
+- 🎵 Extraction of both **frame-level** and **clip-level** embeddings  
+- 🧩 Flexible backbone: **CNN14** and **ConvNeXt** feature extractors  
+- 📊 Evaluation with multiple metrics: **F1-score**, **Accuracy**, and **Error Rate**  
+
 
 ## 📂 Datasets
 
