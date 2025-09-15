@@ -1,22 +1,22 @@
-# 🎧 A Unified Audio Encoder Framework for Target Sound Detection (TSD) with Strong and Strong+ Datasets
+# 🎧 A Unified Audio Encoder Framework for Target Sound Detection(TSD)
 
 ## 📌 Overview
 
-**Target Sound Detection (TSD)** is the task of determining whether a target sound occurs within an audio mixture.  
-This repository provides an implementation of TSD using the **Strong+ dataset**, which includes temporally strong labels and additional negative samples for realistic evaluation.
+This is the task of determining whether a target sound occurs within an audio mixture.  
+This repository provides an implementation of TSD using the **Strong and Strong+ Dataset**, which includes temporally strong labels and additional negative samples for realistic evaluation.
 
-Our approach leverages a hybrid architecture where **frame-level** and **clip-level** embeddings are extracted and fused through **bi-directional GRU (Bi-GRU)** layers, followed by classification layers for sound event detection.
+Our approach leverages a hybrid architecture where **frame-level** and **clip-level** embeddings are extracted and fused through **Bi-Directional GRU (Bi-GRU)** layers, followed by classification layers for sound event detection.
 
 ### 🔑 Key Features
 - ✅ Support for **Strong and Strong+ dataset** with strong temporal annotations and negative samples  
-- 🎵 Extraction of both **frame-level** and **clip-level** embeddings  
+- 🎵 Extraction of both **Frame-Level** and **Clip-Level** embeddings  
 - 🧩 Flexible backbone: **CNN14** and **ConvNeXt** feature extractors  
 - 📊 Evaluation with multiple metrics: **F1-score**, **Accuracy**, and **Error Rate**  
 
 
 ## 📂 Datasets
 
-We use the **Strong and Strong+ dataset** from [DCASE Challenge](https://dcase.community/challenge2023/task-sound-event-detection-in-domestic-environments).  
+We use the **Strong and Strong+ dataset** from [DCASE Challenge](https://arxiv.org/pdf/2112.10153).  
 
 We conduct experiments on **URBAN-SED** and **UrbanSound8K**, along with task-specific variants designed for **Target Sound Detection (TSD):**
 
@@ -51,7 +51,9 @@ This setup simulates real-world scenarios where a target sound may be missing, e
 
 These dataset variants provide a benchmark for assessing TSD models in diverse conditions.
 
-You can download the dataset [here](https://zenodo.org/record/4660670).
+You can download the datasets here:  
+- [URBAN-SED](https://zenodo.org/records/1324404)  
+- [UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html)  
 
 ---
 
