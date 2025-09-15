@@ -65,6 +65,16 @@ You can download the datasets here:
 
 ---
 
+## 🌍 Generalization to AudioSet
+
+In addition to experiments on URBAN-TSD-Strong and URBAN-TSD-Strong+, we also assess how well the framework generalizes to **AudioSet**, a much larger and more diverse collection of sound events.  
+
+The evaluation shows that models trained on the Urban TSD variants transfer effectively to unseen sound categories in AudioSet.  
+This highlights two important aspects of our framework:  
+- ✅ It learns **robust acoustic representations** beyond the training domain.  
+- ✅ It maintains **strong performance on previously unseen data**, confirming its suitability for real-world sound detection tasks.  
+
+
 ## ⚙️ Installation
 
 Clone the repository and install dependencies:
