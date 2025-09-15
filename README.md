@@ -20,7 +20,7 @@ Our **(MODEL)** architecture leverages **frame-level** and **clip-level** repres
 
 ## 📂 Datasets
 
-We use the **Strong+ dataset** from [DCASE Challenge](https://dcase.community/challenge2023/task-sound-event-detection-in-domestic-environments).  
+We use the **Strong and Strong+ dataset** from [DCASE Challenge](https://dcase.community/challenge2023/task-sound-event-detection-in-domestic-environments).  
 
 We conduct experiments on **URBAN-SED** and **UrbanSound8K**, along with task-specific variants designed for **Target Sound Detection (TSD):**
 
