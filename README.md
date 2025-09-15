@@ -2,9 +2,7 @@
 
 This repository provides the implementation of **a unified audio encoder framework for Target Sound Detection (TSD)**.  
 The models are trained and evaluated on the **Urban TSD Strong** and **Urban TSD Strong+** datasets:  
-- **Strong** provides temporally strong labels with precise timestamps.  
-- **Strong+** extends Strong by adding negative samples (where the target sound is absent), enabling more realistic evaluation.  
----
+
 ## 📌 Overview
 
 **Target Sound Detection (TSD)** is the task of determining whether a target sound occurs within an audio mixture.  
